@@ -1,7 +1,7 @@
 library(tidyverse)
-library(parallel)
-library(mlr)
-library(pbapply)
+#library(parallel)
+#library(mlr)
+#library(pbapply)
 
 
 # file to hold the code used for predictions accessing web application

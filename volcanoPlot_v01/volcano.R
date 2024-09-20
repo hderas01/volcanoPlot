@@ -1,7 +1,7 @@
 library(ggsignif)
 library(ggrepel)
 library(tidyverse)
-library(plotly)
+#library(plotly)
 
 
 is_combo_contain_drugpair <- function(combo_name, drug_pair) {
