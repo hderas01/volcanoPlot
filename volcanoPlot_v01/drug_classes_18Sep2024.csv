@@ -1,0 +1,66 @@
+﻿name,abbreviation,class,series,source
+A-211,A-211,unknown,unknown,Seattle Children's
+bedqauiline,BDQ,respiration,diaryquinoline,commercial
+ClpP-1628,ClpP-1628,unknown,ClpP,TB Alliance
+ClpP-1767,ClpP-1767,unknown,ClpP,TB Alliance
+clofazimine,CLZ,respiration,riminophenazine,commercial
+delamanid,DEL,multi-effect,nitroimidazole,Otsuka
+ethambutol,EMB,cell wall,ethambutol,commercial
+GSK286,GCL,respiration,cholesterol catabolism,GSK
+EfpA,GDI,unknown,unknown,GHDDI
+GSK656,GSK,translation,tRNA synthetase,GSK
+H3D-007210,H3D-10,cell wall,FadD32 inhibitor,Cape Town
+H3D-012731,H3D-31,cell wall,FadD32 inhibitor,Cape Town
+H3D-005635,H3D-35,cell wall,FadD32 inhibitor,Cape Town
+H3D-012449,H3D-449,cell wall,FadD32 inhibitor,Cape Town
+H3D-012895,H3D-95,cell wall,FadD32 inhibitor,Cape Town
+habaneros,HAB,cell wall,Mmpl3 inhibitor,Lgenia
+HCl-49,HCl-49,cell wall,PknB inhibitor,TB Alliance
+MPL-204,ICA,cell wall,Mmpl3 inhibitor,TB Alliance
+isoniazid,INH,cell wall,InhA inhibitor,commercial
+jalapenos,JAL,cell wall,Mmpl3 inhibitor,Lgenia
+JNJ-67700750,JNJ,respiration,cytBC inhibitor,Janssen
+JNJ-2901,JNJ-2901,respiration,cytBC inhibitor,Janssen
+JSF-3285,JSF,cell wall,KasA inhibitor,Rutgers
+KasA,KAS,cell wall,KasA inhibitor,GSK
+DDD01866774,KRS,translation,tRNA synthetase,Dundee
+spectinamide-1599,Lee-1599,unknown,spectinamide,St. Jude's
+spectinamide-1810,Lee-1810,unknown,spectinamide,St. Jude's
+GSK3036656,LEU,translation,tRNA synthetase,GSK
+Levofloxacin,LEV,DNA replication,fluoroquinolone,commercial
+linezolid,LIN,translation,oxazolidinone,commercial
+L-229,M3,translation,oxazolidinone,Merck
+Merck-703,M70,translation,oxazolidinone,Merck
+DDD02091384,MMV,multi-effect,MMV46,Dundee
+moxifloxacin,MOX,DNA replication,fluoroquinolone,commercial
+MPL-203,MPL,cell wall,Mmpl3 inhibitor,TB Alliance
+OPC-67832,QBS,cell wall,carbostyril,Otsuka
+mCMX410,Pks13,cell wall,unknown,Calibr at Scripps
+pretomanid,PRE,multi-effect,nitroimidazole,commercial
+pyrazinamide,PZA,multi-effect,pyrazinamide,commercial
+qDEL-10796,qDEL-6,cell wall,PptT inhibitor,TB Alliance
+qDEL-10118,qDEL-8,cell wall,PptT inhibitor,TB Alliance
+rifabutin,RFB,transcription,rifamycin,commercial
+rifapentine,RFP,transcription,rifamycin,commercial
+rifampicin,RIF,transcription,rifamycin,commercial
+RNAP-0198A,RNAP-0198,transcription,RNAP,TB Alliance
+RNAP-0198A,RNAP-0198,transcription,RNAP,TB Alliance
+RNAP-0452B,RNAP-0452,transcription,RNAP,TB Alliance
+sanfetrinem,SAN,cell wall,carbapenem,GSK
+TBAJ-876,SFN,respiration,diaryquinoline,TB Alliance
+SN 39691,SN-91,cell wall,PknB inhibitor,TB Alliance
+SN 40399,SN-99,cell wall,PknB inhibitor,TB Alliance
+SPR-719,SPR,unknown,aminobenzimidazole,Merck
+SQ109,SQ1,multi-effect,Mmpl3 inhibitor,Sequella
+SNID37486,SQ31f,respiration,squarinamide,TB Alliance
+SS-447,SS447,unknown,unknown,Washington University
+sutezolid,SUT,translation,oxazolidinone,commercial
+TBA-7371,TBA,cell wall,carbostyril,TB Alliance
+TBA-208,TBA-208,proteasome,unknown,Harvard
+TBA-334,TBA-334,proteasome,unknown,Harvard
+TBA-506,TBA-506,proteasome,ClpC1,TB Alliance
+TBA-509,TBA-509,proteasome,ClpC1,TB Alliance
+TBAJ-587,TBAJ,respiration,diaryquinoline,TB Alliance
+TBI-223,TBI,translation,oxazolidinone,TB Alliance
+TPN-0094192,TPN-94,unknown,unknown,Seattle Children's
+GSK839,TRP,translation,tetrazole,GSK

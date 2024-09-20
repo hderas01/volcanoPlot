@@ -1,0 +1,9 @@
+class,color,label
+respiration,#ffffb3,respiration
+cell wall,#8dd3c7,cell wall
+multi-effect,#fdb462,multi-effect
+translation,#bebada,translation
+transcription,#fb8072,transcription
+DNA replication,#80b1d3,DNA replication
+unknown,#b3de69,unknown
+proteasome,#d9d9d9,proteasome
