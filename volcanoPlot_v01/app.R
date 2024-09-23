@@ -12,18 +12,18 @@
 library(readxl) # for reading
 library(tidyverse)
 library(openxlsx) # for writing
-library(parallel)
-library(ggsignif)
-library(ggpattern)
-library(colorspace)
+#library(parallel)
+#library(ggsignif)
+#library(ggpattern)
+#library(colorspace)
 library(ggrepel)
 library(shiny)
 library(readxl)
-library(vroom)
+#library(vroom)
 library(shinyFeedback)
-library(gghighlight)
+#library(gghighlight)
 library(shinylive)
-library(httpuv)
+#library(httpuv)
 
 setwd("~/Library/CloudStorage/Box-Box/Scripts/Hope_Scripts/Predictions")
 

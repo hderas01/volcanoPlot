@@ -5,6 +5,8 @@ account: hderas01
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 12779258
-bundleId: 9127138
+bundleId: 9135526
 url: https://hderas01.shinyapps.io/volcanoplot_v01/
 version: 1
+asMultiple: FALSE
+asStatic: FALSE
