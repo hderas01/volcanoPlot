@@ -22,12 +22,13 @@ library(readxl)
 #library(vroom)
 library(shinyFeedback)
 #library(gghighlight)
-library(shinylive)
+#library(shinylive)
 #library(httpuv)
 
-setwd("~/Library/CloudStorage/Box-Box/Scripts/Hope_Scripts/Predictions")
 
-rm(list=ls())
+#setwd("~/Library/CloudStorage/Box-Box/Scripts/Hope_Scripts/Predictions")
+
+#rm(list=ls())
 
 source("volcano.R")
 source("combo_trends.R")
@@ -124,13 +125,13 @@ ui <- fluidPage(
            
            #Create input buttons for drug 1 -------------------------------------------
            
-           radioButtons("class1", label = "First class of interest:", choices = classList),
+           radioButtons("class1", label = "First drug target of interest:", choices = classList),
            
            selectInput("drug1", label = "First drug of interest:", choices = NULL),
            
            #Create input buttons for drug 2 -------------------------------------------
            
-           radioButtons("class2", label = "Second class of interest:", choices = classList),
+           radioButtons("class2", label = "Second drug target of interest:", choices = classList),
            
            selectInput("drug2", label = "Second drug of interest:", choices = NULL),
            
@@ -143,9 +144,11 @@ ui <- fluidPage(
            plotOutput("volcano", click = "plot_click"),
            
            #abbreviation table
+           
+           tableOutput("data"),
+           
            tableOutput("abbs"),
 
-           tableOutput("data"),
            
     )
   ),
@@ -218,13 +221,6 @@ server <- function(input, output, session) {
             legend.title = element_text(size=13))
   })
   
-  #Output relavent table of abbreviations --------------------------------------
-  
-  output$abbs <- renderTable({
-    drugs %>%
-      filter(class == input$class1 | class == input$class2) %>%
-      select(name, abbreviation, class)
-  })
   
   #Output table of combinations when clicked -----------------------------------
   
@@ -234,6 +230,14 @@ server <- function(input, output, session) {
   })
   
   freezeReactiveValue(input, "plot_click")
+  
+  #Output relavent table of abbreviations --------------------------------------
+  
+  output$abbs <- renderTable({
+    drugs %>%
+      filter(class == input$class1 | class == input$class2) %>%
+      select(name, abbreviation, class)
+  })
   
   
   #Stop app when closed (WILL NEED TO BE CHANGED WHEN APP IS DEPLOYED)----------
