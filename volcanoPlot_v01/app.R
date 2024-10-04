@@ -87,7 +87,12 @@ for (i in c(1:3)) {
 
 #merge appData with predictions file 
 predictions <- read_xlsx(input) %>%
-  filter(NumbDrugs == 3)
+  filter(NumbDrugs == 3) %>%
+  select(c(Drug, max_P)) %>%
+  rename("Subcombo P>BPaL" = max_P)
+
+appData <- left_join(appData, predictions,
+                      join_by(subcombo == Drug))
 
 # App itself!
 
@@ -194,7 +199,7 @@ server <- function(input, output, session) {
   
   clickResult <- reactive({
     appData %>%
-      select(subcombo, fold_change_log2, P_wilcox_log10, label)
+      select(subcombo, fold_change_log2, P_wilcox_log10, "Subcombo P>BPaL")
   })
   
   
@@ -209,7 +214,7 @@ server <- function(input, output, session) {
              color = interaction(contains_drugInt1, contains_drugInt2))) +
       geom_point(alpha = 0.3) +
       theme_classic() +
-      geom_vline(xintercept = c(log2(1/fc_thresh), log2(fc_thresh)), col = "brown4", linewidth = 0.2) +
+      #geom_vline(xintercept = c(log2(1/fc_thresh), log2(fc_thresh)), col = "brown4", linewidth = 0.2) +
       geom_hline(yintercept = -log10(sig_thresh), col = "brown4", linewidth = 0.2) +
       scale_color_manual(labels = c("Neither drug of interest", input$drug1,
                                     input$drug2, paste0(input$drug1, " and ", input$drug2)),
